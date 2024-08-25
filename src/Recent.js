@@ -1,7 +1,7 @@
-import i1 from "./i1.jpg"
-import i2 from "./i2.jpg"
-import i3 from "./i3.jpg"
-import i4 from "./i4.jpg"
+import i1 from "./images/i1.jpg"
+import i2 from "./images/i2.jpg"
+import i3 from "./images/i3.jpg"
+import i4 from "./images/i4.jpg"
 
 export default function Recent(){
     return(
@@ -11,27 +11,27 @@ export default function Recent(){
         
         <div className="reimg-container">
         <div className="re-img">
-          <img src={i1} alt="image" />
+          <img src={i1} alt="image1" />
         </div>
 
         <div className="re-img">
-          <img src={i2} alt="image" />
+          <img src={i2} alt="image2" />
         </div>
 
         <div className="re-img">
-          <img src={i3} alt="image" />
+          <img src={i3} alt="image3" />
         </div>
 
         <div className="re-img">
-          <img src={i4} alt="image" />
+          <img src={i4} alt="image4" />
         </div>
         </div>
         <div className="btn3-container">
-                    <button className="btn-recentwork" >
-                    <i class="fa-brands fa-dribbble"></i>
-                       View recent work
-                    </button>
-                </div>
+          <button className="btn-recentwork" >
+            <i className="fa-brands fa-dribbble"></i>
+             View recent work
+            </button>
+          </div>
         
         </div>
 

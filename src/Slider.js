@@ -1,11 +1,12 @@
-import i1 from "./i1.jpg"
-import i2 from "./i2.jpg"
-import i3 from "./i3.jpg"
-import i4 from "./i4.jpg"
-import i5 from "./i5.jpg"
-import i6 from "./i6.jpg"
-import i7 from "./i7.jpg"
-import imgLogo from "./logo1.jpg"
+import i1 from "./images/i1.jpg"
+import i2 from "./images/i2.jpg"
+import i3 from "./images/i3.jpg"
+import i4 from "./images/i4.jpg"
+import i5 from "./images/i5.jpg"
+import i6 from "./images/i6.jpg"
+import i7 from "./images/i7.jpg"
+import imgLogo from "./images/logo1.jpg"
+
 export default function Slider() {
   return (
     <div className="sl-container">

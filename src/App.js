@@ -5,8 +5,10 @@ import Reviews from "./Rev";
 import Benefits from "./Benefits"
 import Recent from './Recent';
 import Scope from './Scope';
-import Slider2 from './Slider2';
 import Pricing from './Pricing';
+import Faq from './Faq';
+// import Footer from "./Footer"
+import Footer2 from './Footer2';
 
 function App() {
   return (
@@ -17,15 +19,10 @@ function App() {
       <Benefits/>
       <Recent/>
       <Scope/>
-      <Slider2/>
       <Pricing/>
-      <> 
-    
-     
-        <h2 id="faq">
-          Hi I'm FAQ
-        </h2>
-      </>
+      <Faq/>
+      <Footer2/>
+      
     </div>
 
   );
