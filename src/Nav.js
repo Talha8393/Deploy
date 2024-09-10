@@ -20,7 +20,7 @@ const Navbar = () =>
       <li><a className="selected" href="#faq">FAQ</a></li>
       
     </ul>
-    <button className={`btn-signup ${isMenuOpen ? 'show' : 'hide'}`}>Sign in</button>
+    <button  className={`btn-signup ${isMenuOpen ? 'show' : 'hide'}`}>Let's Talk</button>
     <button className="btn-toggle" onClick={toggleMenu}>
         ☰
       </button>

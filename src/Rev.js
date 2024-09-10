@@ -9,8 +9,13 @@ import b5 from "./images/b5.jpg"
 import b6 from "./images/b6.jpg"
 import b9 from "./images/b9.jpg"
 
+const Calendly = () => {
+    window.location.href = 'https://calendly.com/talha0azhar5/30-min-free-meeting-with-me'; 
+  };
 const Reviews = () => (
+   
     <>
+   
         <div className="reviews" id='head'>
 
             <img className="clients-image" src={img2} alt="reviews" />
@@ -37,7 +42,7 @@ const Reviews = () => (
                 designer. We design websites and apps that enable <span>business impact</span></p>
         </div>
         <div className="btn-container">
-            <button className="btn-book">
+            <button className="btn-book" onClick={Calendly}>
                 <img style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
                 <span>Book a call</span>
             </button>

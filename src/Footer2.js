@@ -20,20 +20,6 @@ export default function Footer2(){
                     </ul>
                     </div>
                 </div>
-              <div className="foot-right">
-                <div className="foot-rightup">
-                   <div className="flag-icon">
-                    <img style={{height:"20px", width:"auto",}} src={usa} alt="usa-flag"/><span>USA</span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, reprehenderit.</p>
-                </div>
-                <div className="foot-rightdown">
-                <div className="flag-icon">
-                    <img style={{height:"30px", width:"auto",}} src={uk} alt="uk-flag"/><span>UK</span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consequatur.</p>
-                </div>
-              </div> 
             </div>
 
             <div className="footer-links">
