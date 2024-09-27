@@ -2,6 +2,7 @@ import { useState } from "react";
 import star from './images/star.svg';
 import pic1 from "./images/pic1.jpg"
 import btnimg from "./images/btnimg.jpg"
+import { Helmet } from "react-helmet";
 
 
 export default function Faq() {
@@ -59,6 +60,13 @@ export default function Faq() {
   return (
     <>
       <div id="faq">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Helmet-UI/UX Design Services</title>
+                <link rel="canonical" href="https://design-agency-lime.vercel.app/#faq" />
+                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
+                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
+            </Helmet>
         <div className="text-container">
           <p className="R-heading1">Additional answers</p>
           <p className="faq-heading2">

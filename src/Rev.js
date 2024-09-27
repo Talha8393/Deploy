@@ -9,15 +9,16 @@ import b5 from "./images/b5.jpg"
 import b6 from "./images/b6.jpg"
 import b9 from "./images/b9.jpg"
 
+
 const Calendly = () => {
     window.location.href = 'https://calendly.com/talha0azhar5/30-min-free-meeting-with-me'; 
   };
 const Reviews = () => (
    
     <>
-   
+             
         <div className="reviews" id='head'>
-
+       
             <img className="clients-image" src={img2} alt="reviews" />
             <div className="star-container">
                 <div className='stars'>

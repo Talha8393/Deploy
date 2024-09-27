@@ -7,14 +7,20 @@ import s6 from "./images/s6.jpg"
 import s7 from "./images/s7.jpg"
 import imac from "./images/iMac.png"
 import tablet from "./images/phoneTablet.png"
-
+import { Helmet } from "react-helmet"
 
 export default function Scope(){
 
 return(
     <>
 <div id="scope" className="scope-text-container">
-         
+           <Helmet>
+                <meta charSet="utf-8" />
+                <title>Scope-UI/UX Design Services</title>
+                <link rel="canonical" href="https://design-agency-lime.vercel.app/#scope" />
+                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
+                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
+            </Helmet>
 <p className="R-heading1">Our partners hire us to design</p>
 <p className="S-heading2">We only offer design services in domains where we can guarantee excellent quality.</p>
 

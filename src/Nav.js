@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import logo from './images/logo.jpg'
+import {Helmet} from "react-helmet";
 
 const Navbar = () =>
    {
@@ -8,6 +9,14 @@ const Navbar = () =>
       setIsMenuOpen(!isMenuOpen);
     };
     return(
+      <>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home-UI/UX Design Services</title>
+                <link rel="canonical" href="https://design-agency-lime.vercel.app/#top" />
+                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
+                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
+            </Helmet>
   <nav className={`nav ${isMenuOpen ? 'show' : ''}`} >
     <a href="#top">
       <img  className="logo"  src={logo} alt="logo" /> 
@@ -25,6 +34,7 @@ const Navbar = () =>
         ☰
       </button>
   </nav>
+  </>
     )
   }
  

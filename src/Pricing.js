@@ -1,7 +1,7 @@
 import { useState } from "react";
 import stripelogo from "./images/stripe.jpg"
 import btnimg from "./images/btnimg.jpg"
-
+import { Helmet } from "react-helmet";
 
 export default function Pricing() {
   const [buttontoggle, setButtonToggle] = useState(true);
@@ -12,6 +12,13 @@ export default function Pricing() {
 
   return (
     <div id="pricing" className="text-container">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Pricing-UI/UX Design Services</title>
+                <link rel="canonical" href="https://design-agency-lime.vercel.app/#pricing" />
+                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
+                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
+            </Helmet>
       <p className="R-heading1">Simple pricing options</p>
       <p className="P-heading2">Not every project is the same, that's why we offer more flexible options. It is possible to get started without booking a call.</p>
 
