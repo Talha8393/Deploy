@@ -8,7 +8,7 @@ export default function Footer2(){
         <div className="footer">
             <div className="footin">
                 <div className="footer-left">
-                    <p>Talha Mughal Crafting UI/UX is sculpting the bridge between users and technology, fostering a connection that is intuitive, delightful, and unforgettable.</p>
+                    <p>Crafting UI/UX is sculpting the bridge between users and technology, fostering a connection that is intuitive, delightful, and unforgettable.</p>
                    <div className="footer-list">                    
                     <ul>
                         <li><a  href=""><i class="icons  dribble fa-brands fa-dribbble"></i></a></li>

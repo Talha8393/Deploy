@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import logo from './images/logo.jpg'
+import logo from './images/BrightUI.svg'
+
 import {Helmet} from "react-helmet";
 
 const Navbar = () =>

@@ -13,7 +13,7 @@ import b9 from "./images/b9.jpg"
 const Calendly = () => {
     window.location.href = 'https://calendly.com/talha0azhar5/30-min-free-meeting-with-me'; 
   };
-const Reviews = () => (
+const Home = () => (
    
     <>
              
@@ -37,10 +37,10 @@ const Reviews = () => (
 
         <div className='text-container'>
             <h1 className='heading1' >
-                Your proven on-demand design partner
+            Trusted On-Demand Source For Expert Design Services
             </h1>
-            <p className="p1">Experience exceptional design <span>without the hassle </span>of hiring an in-house
-                designer. We design websites and apps that enable <span>business impact</span></p>
+            <p className="p1">Get Professional Web and App Design Services <span> Without the Cost </span> 
+            of Hiring In-House Designers. We Create Custom Solutions That Drive<span> Business Growth</span>.</p>
         </div>
         <div className="btn-container">
             <button className="btn-book" onClick={Calendly}>
@@ -67,4 +67,4 @@ const Reviews = () => (
     </>
 )
 
-export default Reviews;
+export default Home;

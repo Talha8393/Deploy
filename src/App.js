@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Nav';
 import Slider from './Slider';
-import Reviews from "./Rev";
+import Home from "./Home";
 import Benefits from "./Benefits"
 import Recent from './Recent';
 import Scope from './Scope';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App" >
       <Navbar />
-      <Reviews/>
+      <Home/>
       <Slider/>
       <Benefits/>
       <Recent/>

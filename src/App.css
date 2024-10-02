@@ -3,10 +3,8 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-
 .App {
   text-align: center;
-
 }
 #benefits,
 #scope,
@@ -22,11 +20,12 @@ a {
 .logo {
   display: flex;
   justify-content: flex-start;
-  width: 70px;
-  height: auto;
+  height: 44px;
+  width: auto;
   border-radius: inherit;
   margin-left: .5rem;
   cursor: pointer;
+ background-color: transparent;
 }
 nav {
   display: flex;
@@ -43,6 +42,7 @@ nav {
   z-index: 99;
 }
 nav ul {
+  padding: 0;
   background-color: white;
 }
 nav ul li {
@@ -53,9 +53,9 @@ nav ul li {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: #212020;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   font-weight: 700;
   padding: 5px 20px;
   background-color: white;
@@ -71,7 +71,8 @@ nav ul li a:hover {
   margin-right: .5rem;
   padding: 15px 24px;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
+  letter-spacing: .03rem;
   font-weight: 700;
   text-align: center;
   border: none;
@@ -82,7 +83,7 @@ nav ul li a:hover {
 }
 .btn-signup:hover {
   transition: 0.4s;
-  color: black;
+  color: #212020;
   background-color: #f5f3f3;
 }
 .text-container{
@@ -90,22 +91,23 @@ nav ul li a:hover {
 }
 .heading1 {
   font-size: 72px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Bold", sans-serif;
   max-width: 1000px;
-margin: 18px auto 30px auto; 
-line-height:5rem;
+  margin: 18px auto 30px auto; 
+  line-height:5rem;
+  color: #212020;
 }
 
 .reviews{
   display: flex;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 4rem;
 }
 .star-container{
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
   margin-top: -18px;
 }
 .clients-image {
@@ -126,7 +128,7 @@ line-height:5rem;
 }
 .cl-para{
  font-size: 13px;
- font-family: "Inter Tight",sans-serif;
+ font-family: "Satoshi-Regular",sans-serif;
  letter-spacing: 0px;
  margin-top: -18px;
  margin-left: 175px;
@@ -134,15 +136,15 @@ line-height:5rem;
 }
 .p1{
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Satoshi-Regular',sans-serif;
   line-height: 1.8rem;
   color: rgb(102, 102, 102);
   margin-top: -20px;
-max-width: 700px;
-margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .p1>span{
-  color: black;
+  color: #212020;
 }
 .btn-container{
   display: flex;
@@ -152,8 +154,8 @@ margin: 0 auto;
 .btn-book{
   display: flex;
   align-items: center;
-  background-color: rgb(236, 92, 43);
-   border: 1px rgb(236, 92, 43) solid;
+  background-color: #5E3FE5;
+  border: 1px #5E3FE5 solid;
   padding: 16px 40px 16px 38px;
   border-radius: 12px;
   box-shadow: rgba(181, 45, 0, 0.25) 0px 0.120725px 0.120725px -1.25px inset, rgba(181, 45, 0, 0.25) 0px 1px 1px -2.5px inset, rgba(181, 45, 0, 0.25) 0px -2px 4px 0px inset, rgba(255, 255, 255, 0.25) 0px 4px 8px 0px inset, rgba(237, 91, 43, 0.16) 0px 8px 16px 0px;
@@ -162,14 +164,14 @@ margin: 0 auto;
   font-size: 18px;
   font-weight: 700;
   color: white;
-  font-family:"Manrope",sans-serif ;
-  background-color:rgb(236, 92, 43) ;
+  font-family:"Satoshi-Bold",sans-serif ;
+  background-color:#5E3FE5 ;
 }
 .btn-book:hover{
   transform: scale(1.1);
   background-color: transparent;
   transition: transform 0.3s ease-in-out; 
-  background-color:rgb(249, 71, 12) ;
+  background-color:#573bd3 ;
 }
 .btn-book:hover span{
   background-color: transparent;
@@ -194,13 +196,13 @@ gap: 36px;
 } 
 
 .bimg-container img{
-  display: block;
-  margin: 10px;
+   display: block;
+   margin: 10px;
    width:auto;
    height: 15px;
    mix-blend-mode: multiply;
-    object-fit: cover;
-    image-rendering: auto;
+   object-fit: cover;
+   image-rendering: auto;
 }
 .sl-container{
   display: flex;
@@ -246,7 +248,7 @@ gap: 36px;
 .image-text {
 background: none;
   font-size: 12px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   margin: 0;
   text-align: right;
   color: rgb(102, 102, 102);
@@ -255,16 +257,16 @@ background: none;
   padding-top: 160px;
 }
 .B-heading1{
-  color: rgb(10, 9, 8);
+  color: #212020;
   font-size: 42px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Bold",sans-serif;
 font-weight: 700;
 margin: 0;
 }
 .B-heading2{
   color: #666666;
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   
 }
 .card-container{
@@ -281,11 +283,11 @@ margin: 0 40px;
 }
 .card h1{
   font-size: 92px;
-  background: -webkit-linear-gradient(rgb(236, 92, 43), rgb(252, 202, 185));
+  background: -webkit-linear-gradient( #4F38DF,#A863FF);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0 auto;
-  font-family:"Manrope",sans-serif;
+  font-family:"Satoshi-Bold",sans-serif;
   position: relative;
   bottom: -20px;
 }
@@ -293,14 +295,14 @@ margin: 0 40px;
 .card h2 {
   margin: 0 auto;
   font-size: 20px;
-  font-family:"Manrope",sans-serif;
+  font-family:"Satoshi-Bold",sans-serif;
   font-weight: 700;
- color:rgb(10, 9, 8);
+  color: #212020;
 }
 .card p {
   font-size: 16px;
   color: #666666;
-  font-family:"Inter Tight",sans-serif;
+  font-family:"Satoshi-Regular",sans-serif;
   text-align: center;
 }
 .img-board{
@@ -317,12 +319,12 @@ margin: 0 40px;
 .btn-work{
   display: flex;
   font-size: 18px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Bold",sans-serif;
   font-weight: 700;
   background-color: white;
   align-items: center;
-  color:rgb(236, 92, 43);
-  border: 1px rgb(236, 92, 43) solid;
+  color:#5E3FE5;
+  border: 1px #5E3FE5 solid;
   padding: 16px 40px 16px 38px;
   border-radius: 12px;
   box-shadow: 2px 2px 5px;
@@ -338,14 +340,14 @@ background-color: transparent;
 .R-heading1{
   color: rgb(10, 9, 8);
   font-size: 42px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Bold",sans-serif;
 font-weight: 700;
 margin: 0;
 }
 .R-heading2{
   color: #666666;
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   max-width: 420px;
   line-height: 1.8rem;
   text-wrap: wrap;
@@ -379,11 +381,11 @@ margin: 3rem auto;
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Bold",sans-serif;
   font-weight: 700;
   background-color: white;
-  color:rgb(236, 92, 43);
-  border: 1px rgb(236, 92, 43) solid;
+  color:#5E3FE5;
+  border: 1px #5E3FE5 solid;
   padding: 16px 40px 16px 38px;
   border-radius: 12px;
   box-shadow: 2px 2px 5px;
@@ -399,7 +401,7 @@ margin: 3rem auto;
 .S-heading2{
   color: #666666;
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   max-width: 400px;
   line-height: 1.8rem;
   text-wrap: wrap;
@@ -424,7 +426,7 @@ margin: 3rem auto;
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   font-weight: 800;
   padding: 16px 32px;
   background-color: white;
@@ -450,7 +452,7 @@ margin: 3rem auto;
   color: white;
   background-color: transparent;
   font-size: 34px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Bold",sans-serif;
   font-weight: 700;
   margin: 0 auto;
 }
@@ -480,7 +482,7 @@ margin: 3rem auto;
   max-width: 400px;
   height: 470px;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   font-weight: 700;
   justify-content: space-between;
   background-color: #ffffff1f;
@@ -491,9 +493,6 @@ margin: 3rem auto;
 .s-card1:hover,.s-card2:hover{
   transform: translateY(-15px) ;
 }
-
-
-
 .scard-img{
  position: relative;
  height: 100%;
@@ -510,12 +509,12 @@ margin: 3rem auto;
 }
 
 .sc-header>p{
-    color: #ffffff7a;
-    letter-spacing: 1px;
-    font-size: .875rem;
-    font-weight: 400;
-    background-color: transparent;
-    margin:0;
+  color: #ffffff7a;
+  letter-spacing: 1px;
+  font-size: .875rem;
+  font-weight: 400;
+  background-color: transparent;
+  margin:0;
 }
 .sc-header2{
   display: flex;
@@ -526,7 +525,7 @@ margin: 3rem auto;
 }
 .sc-header2>p{
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   font-weight: 600;
   letter-spacing: .5px;
   color: white;
@@ -544,7 +543,7 @@ margin: 3rem auto;
 }
 .sc-header3>p{
   font-size: 16px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   font-weight: 400;
   letter-spacing: .5px;
   color: white;
@@ -562,7 +561,7 @@ margin: 3rem auto;
 .P-heading2{
   color: #666666;
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   max-width: 600px;
   line-height: 1.8rem;
   text-wrap: wrap;
@@ -588,7 +587,7 @@ margin: 3rem auto;
   margin-right: .5rem;
   padding: 13px 24px;
   font-size: 14px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   font-weight: 700;
   border: none;
   border-radius: 50px;
@@ -627,7 +626,7 @@ margin: 3rem auto;
   padding-top: 28px;
   max-width: 360px;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Satoshi-Regular", sans-serif;
   font-weight: 700;
   background-color: white;
 }
@@ -644,7 +643,7 @@ margin: 3rem auto;
   margin: 0;
   font-size: 20px;
   font-weight: bold;
-  color: rgb(236, 92, 43);
+  color: #5E3FE5;
   background-color: white;
 }
 
@@ -654,7 +653,7 @@ margin: 3rem auto;
   padding: 5px 10px;
    margin-left: 50px;
   border-radius: 15px;
-  font-family:"Inter Tight",sans-serif;
+  font-family:"Satoshi-Regular",sans-serif;
   font-size: 10px;
   font-weight: 500;
 }
@@ -669,14 +668,14 @@ margin: 3rem auto;
 
 .price {
   font-size: 40px;
-font-family: "Manrope",sans-serif;
+font-family: "Satoshi-Regular",sans-serif;
 font-weight: 600;
   background-color: white;
 }
 
 .per-week {
   font-size: 14px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
 font-weight: 700;
   color: #888;
   margin-left: 5px;
@@ -693,13 +692,14 @@ font-weight: 700;
 
 .feature-item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 16px;
   color: rgb(10, 9, 8);
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   font-weight: 400;
   background-color: white;
-
+  align-items:baseline;
+  
 }
 
 .p-icon {
@@ -734,25 +734,25 @@ font-weight: 700;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: rgb(236, 92, 43);
-   border: 1px rgb(236, 92, 43) solid;
+  background-color: #5E3FE5;
+   border: 1px #5E3FE5 solid;
   padding: 16px 40px 16px 38px;
   border-radius: 12px;
-  box-shadow: rgba(181, 45, 0, 0.25) 0px 0.120725px 0.120725px -1.25px inset, rgba(181, 45, 0, 0.25) 0px 1px 1px -2.5px inset, rgba(181, 45, 0, 0.25) 0px -2px 4px 0px inset, rgba(255, 255, 255, 0.25) 0px 4px 8px 0px inset, rgba(237, 91, 43, 0.16) 0px 8px 16px 0px;
+  box-shadow: rgba(94, 63, 229, 0.25) 0px 0.120725px 0.120725px -1.25px inset, rgba(94, 63, 229, 0.25) 0px 1px 1px -2.5px inset, rgba(94, 63, 229, 0.25) 0px -2px 4px 0px inset, rgba(255, 255, 255, 0.25) 0px 4px 8px 0px inset, rgba(94, 63, 229, 0.16) 0px 8px 16px 0px;
 
 }
 .ps-btn>span{
   font-size: 18px;
   font-weight: 700;
   color: white;
-  font-family:"Manrope",sans-serif ;
-  background-color:rgb(236, 92, 43) ;
+  font-family:"Satoshi-Regular",sans-serif ;
+  background-color:#5E3FE5 ;
 }
 .ps-btn:hover{
   transform: scale(1.1);
   background-color: transparent;
   transition: transform 0.3s ease-in-out; 
-  background-color:rgb(249, 71, 12) ;
+  background-color:#5E3FE5;
 }
 .ps-btn:hover span{
   background-color: transparent;
@@ -765,15 +765,15 @@ background-color: white;
   background-color: white;
 }
 .ps-btn1 span{
-  color: rgb(236, 92, 43);
+  color: #5E3FE5;
   background-color: white;
 }
 .subscription-card2{
-  box-shadow: rgba(237, 91, 43, 0.3) 0px 0px 25px 0px;
+  box-shadow:rgba(94, 63, 229, 0.3) 0px 0px 25px 0px;
 }
 
 .p-inputs{
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   font-weight:500 ;
   margin: 5px 0px;
   padding: 12px;
@@ -803,7 +803,7 @@ background-color: white;
 }
 .card-text{
  font-size: 13px;
- font-family: "Inter Tight",sans-serif;
+ font-family: "Satoshi-Regular",sans-serif;
  color: #666666;
  margin-right: 5px;
 }
@@ -816,7 +816,7 @@ background-color: white;
 .faq-heading2{
   color: #666666;
   font-size: 20px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   max-width: 500px;
   line-height: 1.8rem;
   text-wrap: wrap;
@@ -844,7 +844,7 @@ margin: 2.5px 0;
 .accordian{
   display: flex;
   font-size: 18px;
-  font-family: "Manrope",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   font-weight: 600;
   line-height: 1.6rem;
   align-items: center;
@@ -860,7 +860,7 @@ margin: 2.5px 0;
 .accordian i{
   width: 16px;
   height: 16px;
-  color: rgb(236, 92, 43);
+  color: #5E3FE5;
   padding-right: 40px;
   background-color: transparent;
 }
@@ -878,7 +878,7 @@ display: none;
 
 .panel p{
   font-size: 16px;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   line-height: 1.5rem;
   word-spacing: .1rem;
  background-color: transparent;
@@ -913,7 +913,7 @@ display: none;
 .faq-p {
   font-size: 16px;
   color: #666666;
-  font-family:"Inter Tight",sans-serif;
+  font-family:"Satoshi-Regular",sans-serif;
   text-align: center;
   margin-top: 10px;
 }
@@ -949,22 +949,22 @@ flex-direction: column;
 
  .faq-p2 p{
   font-size: 14px;
-  font-weight: 500;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
+  font-weight: 600;
   margin: 0px auto;
   padding-left: 3rem;
  }
 
  .faq-p2 .fp1{
 position: relative;
-top: -32px;
+top: -33px;
 left: -25px;
 color: #3e3e3e;
  }
 
  .faq-p2 .fp2{
   position: relative;
-  top: -30px;
+  top: -33px;
   left: 5px;
   font-size: 12px;
   color: #666666;
@@ -988,7 +988,7 @@ color: #3e3e3e;
    .faq-heading1{
     color: rgb(10, 9, 8);
     font-size: 42px;
-    font-family: "Manrope",sans-serif;
+    font-family: "Satoshi-Bold",sans-serif;
   font-weight: 700;
   margin: 0;
   max-width: 700px;
@@ -998,7 +998,7 @@ color: #3e3e3e;
 .fp3{
   font-size:14px;
   font-weight: 500;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
   color: #666666;
   background-color: transparent;
 }
@@ -1061,7 +1061,7 @@ color: #666666;
   max-width: 90%;
   margin: 0 auto;
   text-align: center;
-  font-family: "Inter Tight",sans-serif;
+  font-family: "Satoshi-Regular",sans-serif;
 }
 .footin{
   display: flex;
@@ -1143,7 +1143,7 @@ flex-wrap: wrap;
   background-color: transparent;
   color: black;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 10px; 
 }
 .rights{
@@ -1162,9 +1162,10 @@ color: #888;
 .design p{
   color: black;
    font-size: 300px;
+   font-family: "Satoshi-Bold",sans-serif;
    font-weight: 900;
    margin: 0;
-  margin-top: -50px;
+  margin-top: -90px;
   background-color: transparent;
 }
 .dribble:hover,.behance:hover,.twitterx:hover,.facebook:hover,.linkedin:hover,.instagram:hover{
@@ -1280,7 +1281,7 @@ color: #888;
   .design p{
      font-size: 200px;
      font-weight: 900;
-    margin-top: -30px;
+    margin-top: -60px;
   }
   }
 @media (max-width: 870px) {
@@ -1359,7 +1360,7 @@ color: #888;
 .design p{
    font-size: 130px;
    font-weight: 900;
-  margin-top: -25px;
+  margin-top: -40px;
 }
 }
 @media(max-width:550px){
@@ -1374,7 +1375,7 @@ color: #888;
     .design p{
        font-size: 100px;
        font-weight: 900;
-      margin-top: -15px;
+      margin-top: -30px;
     }
 }
 
@@ -1520,7 +1521,7 @@ color: #888;
        .design p{
           font-size: 80px;
           font-weight: 900;
-         margin-top: -10px;
+         margin-top: -25px;
        }
        .footer{
         max-width: 95%;
