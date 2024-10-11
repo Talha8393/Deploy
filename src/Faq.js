@@ -4,6 +4,15 @@ import pic1 from "./images/pic1.jpg"
 import btnimg from "./images/btnimg.jpg"
 import { Helmet } from "react-helmet";
 
+function GetMonth() {
+  const fulldate= new Date();
+  const MonthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+ return    MonthNames[fulldate.getMonth()] ;
+ }
 
 export default function Faq() {
   const faqs = [
@@ -111,7 +120,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -130,7 +139,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -148,7 +157,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -167,7 +176,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -185,7 +194,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -203,7 +212,7 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
@@ -221,14 +230,14 @@ export default function Faq() {
              <span>The whole experience was great, and the process was smooth, well worth it. </span> ”</p>
           <div className="faq-p2">
             <img className="fpic1" src={pic1} alt="pic1" />
-            <p className="fp1">Samraib Hamza</p>
+            <p className="fp1">Michael Smith</p>
             <p className="fp2">Engineer at Emilfy Frey Digital</p>
           </div>
         </div>
       </div>
 
-      <div className="faq-book">
      
+      <div className="faq-book">
           <p className="faq-heading1">You seem either very interested or have questions.</p>
 
           <div className="btn-container">
@@ -237,7 +246,7 @@ export default function Faq() {
                 <span>Book a call</span>
             </button>
         </div>
-        <p className="fp3"><i className="fa-solid fa-circle-dot fa-beat ficon-style" ></i> Spots available for August</p>
+        <p className="fp3"><i className="fa-solid fa-circle-dot fa-beat ficon-style" ></i> `Spots available for {GetMonth()}`</p>
       </div>
 
     </>

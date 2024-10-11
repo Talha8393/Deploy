@@ -47,6 +47,10 @@ const Home = () => (
                 <img style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
                 <span>Book a call</span>
             </button>
+            <div className="pbtn-container price-btn">
+              <button className="ps-btn ps-btn1 see-pricing-btn">
+              <span><a href="#pricing">View plans & pricing</a></span></button>
+            </div>
         </div>
 
         <div className="bimg-container">
