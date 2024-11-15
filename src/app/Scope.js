@@ -1,3 +1,5 @@
+"use client"
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import s1 from "./images/s1.jpg"
 import s2 from "./images/s2.jpg"
@@ -10,7 +12,23 @@ import imac from "./images/iMac.png"
 import tablet from "./images/phoneTablet.png"
 
 export default function Scope(){
+    const sliderReff = useRef(null);
 
+    useEffect(() => {
+      const handleScroll = () => {
+        if (sliderReff.current) {
+          const scrollValue = window.scrollY; // Get vertical scroll
+          sliderReff.current.style.setProperty("--scroll", scrollValue);
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
 return(
     <>
 <div id="scope" className="scope-text-container">
@@ -29,13 +47,17 @@ return(
 <a href="">Brand assets </a>
 <a href="">Design Systems </a>
 </div>
-
 </div>
 
 <div className="sl-container">
-<div className="slider-container">
+<div className="slider-container" ref={sliderReff}>
+{[s1, s2, s3, s4, s5, s6, s7,s3, s4, s5,s2,s6,s1, s2, s3, s4, s5, s6, s7,s3, s4, s5,s2,s6].map((image, index) => (
+          <div className="slide-img" key={index}>
+            <Image src={image} alt={`design${index + 1}`} width={280} height={240} />
+          </div>
+))} 
 
-    <div className="slide-img">
+    {/* <div className="slide-img">
         <Image src={s1} alt="image"  width={280} height={240} />
     </div>
     <div className="slide-img">
@@ -46,7 +68,6 @@ return(
 
     </div><div className="slide-img">
         <Image src={s4} alt="image"  width={280} height={240}/>
-
     </div>
     <div className="slide-img">
         <Image src={s5} alt="image"  width={280} height={240}/>
@@ -56,13 +77,9 @@ return(
 
     </div><div className="slide-img">
         <Image src={s7} alt="image"  width={280} height={240}/>
-
     </div>
-
-
     <div className="slide-img">
         <Image src={s1} alt="image" width={280} height={240}/>
-
     </div>
     <div className="slide-img">
         <Image src={s2} alt="image"  width={280} height={240}/>
@@ -81,8 +98,7 @@ return(
 
     </div><div className="slide-img">
         <Image src={s7} alt="image"  width={280} height={240}/>
-    </div>
-
+    </div> */}
 
 </div>
 </div>

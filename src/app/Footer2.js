@@ -1,5 +1,7 @@
-
-
+import Image from "next/image";
+import wise from "./images/wise.svg"
+import payoneer from "./images/payoneer.png"
+import upwork from "./images/upwork.png"
 export default function Footer2(){
 
     return(
@@ -29,7 +31,11 @@ export default function Footer2(){
                     <li><a href="">Terms & Conditions</a></li>
                     <li><a href="">Privacy Policy</a></li>
                 </ul>
-
+                <ul>
+                <li><a href=""><Image style={{width: 58, height:32}} src={wise} alt="wise" /></a></li>
+                <li><a href=""><Image style={{width: 82, height:32}} src={payoneer} alt="payoneer" /></a></li>
+                <li><a href=""><Image style={{width: 55, height:32}} src={upwork} alt="upwork" /></a></li>
+                </ul>
                 <div className="rights">
                     <span>© 2024 Design Studio UI UX | All Rights Reserved</span>
                 </div>

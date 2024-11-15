@@ -1,3 +1,5 @@
+"use client"
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import i1 from "./images/i1.jpg"
 import i2 from "./images/i2.jpg"
@@ -9,10 +11,47 @@ import i7 from "./images/i7.jpg"
 import imgLogo from "./images/logo1.jpg"
 
 export default function Slider() {
+
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sliderRef.current) {
+        const scrollValue = window.scrollY; // Get vertical scroll
+        sliderRef.current.style.setProperty("--scroll", scrollValue);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const descriptions = [
+    "Website design for B-protocol",
+    "Website design for Digital Assets",
+    "Website design for Block Sauce",
+    "Website design for Shi Beach",
+    "Website design for 021",
+    "Website design for Door Ways",
+    "Website design for Sergy",
+  ];
   return (
     <div className="sl-container">
-      <div className="slider-container">
+      <div className="slider-container" ref={sliderRef}>
+      {[i1, i2, i3, i4, i5, i6, i7,i3, i4, i5,i2,i6].map((image, index) => (
+          <div className="slide-img" key={index}>
+            <Image src={image} alt={`design${index + 1}`} width={280} height={240} />
+            <div className="overlay">
+              <Image src={imgLogo} alt="logo" className="img-logo" />
+              <p className="image-text">{descriptions[index]}</p>
+            </div>
+          </div>
+        ))} 
 
+{/* 
         <div className="slide-img">
           <Image src={i1} alt="design1" width={280} height={240} loading="lazy"/>
           <div className="overlay">
@@ -58,8 +97,8 @@ export default function Slider() {
             <p className="image-text">Website design for Sergy</p>
           </div>
         </div>
-
-         
+ 
+        
         <div className="slide-img">
           <Image src={i1} alt="design1" width={280} height={240} loading="lazy"/>
           <div className="overlay">
@@ -103,7 +142,8 @@ export default function Slider() {
     <Image src={imgLogo} alt="logo" className="img-logo" />
     <p className="image-text">Website design for Sergy</p>
   </div>
-        </div>
+        </div> */}
+
       </div>
     </div>
   );
