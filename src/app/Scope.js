@@ -1,3 +1,4 @@
+import Image from "next/image";
 import s1 from "./images/s1.jpg"
 import s2 from "./images/s2.jpg"
 import s3 from "./images/s3.jpg"
@@ -7,20 +8,12 @@ import s6 from "./images/s6.jpg"
 import s7 from "./images/s7.jpg"
 import imac from "./images/iMac.png"
 import tablet from "./images/phoneTablet.png"
-import { Helmet } from "react-helmet"
 
 export default function Scope(){
 
 return(
     <>
 <div id="scope" className="scope-text-container">
-           <Helmet>
-                <meta charSet="utf-8" />
-                <title>Scope-UI/UX Design Services</title>
-                <link rel="canonical" href="https://design-agency-lime.vercel.app/#scope" />
-                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
-                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
-            </Helmet>
 <p className="R-heading1">Our partners hire us to design</p>
 <p className="S-heading2">We only offer design services in domains where we can guarantee excellent quality.</p>
 
@@ -43,52 +36,51 @@ return(
 <div className="slider-container">
 
     <div className="slide-img">
-        <img src={s1} alt="image" />
+        <Image src={s1} alt="image"  width={280} height={240} />
     </div>
     <div className="slide-img">
-        <img src={s2} alt="image" />
+        <Image src={s2} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s3} alt="image" />
+        <Image src={s3} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s4} alt="image" />
-
-    </div>
-    <div className="slide-img">
-        <img src={s5} alt="image" />
-
-    </div><div className="slide-img">
-        <img src={s6} alt="image" />
-
-    </div><div className="slide-img">
-        <img src={s7} alt="image" />
-
-    </div>
-
-
-    <div className="slide-img">
-        <img src={s1} alt="image" />
+        <Image src={s4} alt="image"  width={280} height={240}/>
 
     </div>
     <div className="slide-img">
-        <img src={s2} alt="image" />
+        <Image src={s5} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s3} alt="image" />
+        <Image src={s6} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s4} alt="image" />
+        <Image src={s7} alt="image"  width={280} height={240}/>
+
+    </div>
+
+
+    <div className="slide-img">
+        <Image src={s1} alt="image" width={280} height={240}/>
+
+    </div>
+    <div className="slide-img">
+        <Image src={s2} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s5} alt="image" />
+        <Image src={s3} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s6} alt="image" />
+        <Image src={s4} alt="image"  width={280} height={240}/>
 
     </div><div className="slide-img">
-        <img src={s7} alt="image" />
+        <Image src={s5} alt="image"  width={280} height={240}/>
 
+    </div><div className="slide-img">
+        <Image src={s6} alt="image"  width={280} height={240}/>
+
+    </div><div className="slide-img">
+        <Image src={s7} alt="image"  width={280} height={240}/>
     </div>
 
 
@@ -96,9 +88,7 @@ return(
 </div>
 
 <div className="scope-section">
-
     <p className="scope-heading2">We turn complex ideas into intuitive experiences.</p>
-
     <div className="scope-cards">
 {/* ---------------Card1-------------- */}
    
@@ -107,12 +97,12 @@ return(
              <p>UI/UX DESIGN</p>
             </div>
             <div className="sc-header2">
-             <p>WE design clean experiences that your users will love.</p>
+             <p>We design clean experiences that your users will love.</p>
             </div>
             <div className="sc-header3">
-             <p>See my work <i class="fa-solid fa-arrow-right"></i></p>
+             <a href="">See my work <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <img src={tablet} alt="tab-img" className="scard-img" />
+            <Image src={tablet} alt="tab-img" className="scard-img"   />
         </div>
    
 {/* -------------------Card2---------------- */}
@@ -122,15 +112,13 @@ return(
              <p>WEBFLOW / FRAMER</p>
             </div>
             <div className="sc-header2">
-             <p>we build high quality websites at warp speed</p>
+             <p>We build high quality websites at warp speed</p>
             </div>
             <div className="sc-header3">
-             <p>How I help <i class="fa-solid fa-arrow-right"></i></p>
+             <a href="">How I help <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            <img src={imac} alt="tab-img" className="scard-img" />
+            <Image src={imac} alt="tab-img" className="scard-img"  />
         </div>
-    
-  
 </div>
 </div>
 </>

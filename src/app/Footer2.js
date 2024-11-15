@@ -1,5 +1,3 @@
-import usa from "./images/usa.png";
-import uk from "./images/uk.png";
 
 
 export default function Footer2(){

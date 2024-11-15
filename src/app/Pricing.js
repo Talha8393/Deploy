@@ -1,24 +1,19 @@
+"use client"
+import Image from "next/image";
 import { useState } from "react";
-import stripelogo from "./images/stripe.jpg"
 import btnimg from "./images/btnimg.jpg"
-import { Helmet } from "react-helmet";
 
 export default function Pricing() {
   const [buttontoggle, setButtonToggle] = useState(true);
   const togglebutton = () => {
     setButtonToggle(!buttontoggle);
   };
-
+  const Calendly = () => {
+    window.open("https://calendly.com/talha0azhar5/30-min-free-meeting-with-me", "_blank"); 
+  };
 
   return (
     <div id="pricing" className="text-container">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Pricing-UI/UX Design Services</title>
-                <link rel="canonical" href="https://design-agency-lime.vercel.app/#pricing" />
-                <meta name="description" content="Welcome to Design Agency. Experience high-quality, productized UI/UX design services. Our customized design packages are crafted for businesses of all sizes." />
-                <meta name="keywords" content="UI/UX, Design Agency, Web Design, App Design" />
-            </Helmet>
       <p className="R-heading1">Simple pricing options</p>
       <p className="P-heading2">Not every project is the same, that's why we offer more flexible options. It is possible to get started without booking a call.</p>
 
@@ -67,12 +62,10 @@ export default function Pricing() {
               </li>
             </ul>
             <div className="pbtn-container">
-              <button className="ps-btn ps-btn1">
-                <img style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+              <button className="ps-btn ps-btn1 btn-pricec1" onClick={Calendly}>
+                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
                 <span>Book a call</span></button>
             </div>
-            <p className="or">-or-</p>
-            <p className="p-text">Get started now</p>
           </div>
 
           {/* ---------------Card 2--------------- */}
@@ -109,12 +102,10 @@ export default function Pricing() {
               </li>
             </ul>
             <div className="pbtn-container">
-              <button className="ps-btn ps-btn2">
-                <img style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+              <button className="ps-btn ps-btn2" onClick={Calendly}> 
+                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
                 <span>Book a call</span></button>
             </div>
-            <p className="or">-or-</p>
-            <p className="p-text">Get started now</p>
           </div>
           
           </>
@@ -140,16 +131,14 @@ export default function Pricing() {
                 <span>Request a quote</span></button>
             </div>
             <p className="or">-or-</p>
-            <p className="p-text">Book a call</p>
+            <p className="p-text" onClick={Calendly}>Book a call</p>
           </div>
           </>
     )}    
      
         </div>
         <div className="card-bottom"> 
-        <p className="card-text">Transaction fees included. Payments secured by</p>
-        <img className="card-text-logo" src={stripelogo} alt="Stripe-logo" />
-        </div>
+                  </div>
       </>
     </div>
   )
