@@ -129,7 +129,8 @@ export default function Pricing() {
     )}    
         </div>
         <div className="card-bottom"> 
-                  </div>
+          
+           </div>
       </>
     </div>
   )
