@@ -7,7 +7,7 @@ import btnimg from "./images/btnimg.jpg"
 import serviceimg from "./images/service.svg"
 
 const Calendly = () => {
-  window.open("https://calendly.com/talha0azhar5/30-min-free-meeting-with-me", "_blank"); 
+  window.open("https://calendly.com/fahad-brightui/30min", "_blank"); 
 };
 function GetMonth() {
   const fulldate = new Date();
@@ -105,7 +105,7 @@ export default function Faq() {
            <Image className="serviceimg" src={serviceimg} alt="serviceimg" />
            <p className="service-heading">Still unsure? We got you covered!</p>
            <button className="service-btn" onClick={Calendly}>
-                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+                {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span></button>
            </div>
           </div>
@@ -249,7 +249,7 @@ export default function Faq() {
             <p className="faq-heading1">You seem either very interested or have questions.</p>
             <div className="btn-container">
               <button className="btn-book" onClick={Calendly}>
-                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+                {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span>
               </button>
             </div>

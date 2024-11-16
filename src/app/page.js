@@ -9,7 +9,6 @@ import Scope from './Scope';
 import Pricing from './Pricing';
 import Faq from './Faq';
 import Footer2 from './Footer2';
-import Head from "next/head";
 
 export default function Home() {
   return (

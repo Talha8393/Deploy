@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import btnimg from "./images/btnimg.jpg"
+import handleSubmit from "./action";
 
 export default function Pricing() {
   const [buttontoggle, setButtonToggle] = useState(true);
@@ -9,9 +10,8 @@ export default function Pricing() {
     setButtonToggle(!buttontoggle);
   };
   const Calendly = () => {
-    window.open("https://calendly.com/talha0azhar5/30-min-free-meeting-with-me", "_blank"); 
+    window.open("https://calendly.com/fahad-brightui/30min", "_blank"); 
   };
-
   return (
     <div id="pricing" className="text-container">
       <p className="R-heading1">Simple pricing options</p>
@@ -28,15 +28,13 @@ export default function Pricing() {
       <>
           {/* -----------Card 1------------ */}
 
-
-
           <div className="subscription-card">
             <div className="header">
               <h2 className="heading">Design Weekly</h2>
               <span className="type-badge">PERFECT START</span>
             </div>
             <div className="price-container">
-              <span className="price">$599</span>
+              <span className="price">$749</span>
               <span className="per-week">/ week</span>
             </div>
             <ul className="features-list">
@@ -56,14 +54,10 @@ export default function Pricing() {
                 <i className="fa-solid fa-circle-check p-icon"></i>
                 Updates every other day
               </li>
-              <li className="feature-item">
-                <i className="fa-solid fa-circle-check p-icon"></i>
-                Framer development included
-              </li>
             </ul>
             <div className="pbtn-container">
               <button className="ps-btn ps-btn1 btn-pricec1" onClick={Calendly}>
-                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+                  {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span></button>
             </div>
           </div>
@@ -96,14 +90,10 @@ export default function Pricing() {
                 <i className="fa-solid fa-circle-check p-icon"></i>
                 Updates every other day
               </li>
-              <li className="feature-item">
-                <i className="fa-solid fa-circle-check p-icon"></i>
-                Framer development included
-              </li>
             </ul>
             <div className="pbtn-container">
               <button className="ps-btn ps-btn2" onClick={Calendly}> 
-                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+                {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span></button>
             </div>
           </div>
@@ -120,14 +110,16 @@ export default function Pricing() {
             <div className="price-container">
               <span className="price">One-Time</span>
             </div>
+            <form action={handleSubmit}>
             <ul className="features-list pfeatures-list ">
-              <input className="p-inputs" type="text" name="name" id="name"  placeholder="Name"/>
+              <input className="p-inputs" type="text" name="username" id="username"  placeholder="Name"/>
               <input className="p-inputs" type="email" name="email" id="email"  placeholder="Email address"/>
-              <input className="p-inputs" type="text" name="name" id="name"  placeholder="Website or social"/>
+              <input className="p-inputs" type="url" name="url" id="url"  placeholder="Website or social"/>
               <textarea className="p-inputs" rows={4} name="textarea" id="textarea" placeholder="What do you need help with?"></textarea>
             </ul>
+            </form>
             <div className="pbtn-container">
-              <button className="ps-btn ps-btn1">
+              <button className="ps-btn ps-btn1" type="submit">
                 <span>Request a quote</span></button>
             </div>
             <p className="or">-or-</p>
@@ -135,7 +127,6 @@ export default function Pricing() {
           </div>
           </>
     )}    
-     
         </div>
         <div className="card-bottom"> 
                   </div>

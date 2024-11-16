@@ -14,7 +14,7 @@ import Head from "next/head";
 
 
 const Calendly = () => {
-    window.open("https://calendly.com/talha0azhar5/30-min-free-meeting-with-me", "_blank"); 
+    window.open("https://calendly.com/fahad-brightui/30min", "_blank"); 
   };
 const HomePage = () => (
    
@@ -47,7 +47,7 @@ const HomePage = () => (
         </div>
         <div className="btn-container">
             <button className="btn-book" onClick={Calendly} >
-                <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" />
+                {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10}} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span>
             </button>
             <div className="pbtn-container">
