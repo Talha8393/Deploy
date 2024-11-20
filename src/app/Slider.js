@@ -17,18 +17,15 @@ export default function Slider() {
   useEffect(() => {
     const handleScroll = () => {
       if (sliderRef.current) {
-        const scrollValue = window.scrollY; // Get vertical scroll
+        const scrollValue = window.scrollY;
         sliderRef.current.style.setProperty("--scroll", scrollValue);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const descriptions = [
     "Website design for B-protocol",
     "Website design for Digital Assets",

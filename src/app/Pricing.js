@@ -57,7 +57,6 @@ export default function Pricing() {
             </ul>
             <div className="pbtn-container">
               <button className="ps-btn ps-btn1 btn-pricec1" onClick={Calendly}>
-                  {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span></button>
             </div>
           </div>
@@ -93,11 +92,9 @@ export default function Pricing() {
             </ul>
             <div className="pbtn-container">
               <button className="ps-btn ps-btn2" onClick={Calendly}> 
-                {/* <Image style={{ width: 32, height: 32, borderRadius: 50, marginRight: 10, }} src={btnimg} alt="jpg" /> */}
                 <span>Book a call</span></button>
             </div>
           </div>
-          
           </>
     ):(
       <>
@@ -117,11 +114,11 @@ export default function Pricing() {
               <input className="p-inputs" type="url" name="url" id="url"  placeholder="Website or social"/>
               <textarea className="p-inputs" rows={4} name="textarea" id="textarea" placeholder="What do you need help with?"></textarea>
             </ul>
-            </form>
             <div className="pbtn-container">
               <button className="ps-btn ps-btn1" type="submit">
                 <span>Request a quote</span></button>
             </div>
+            </form>
             <p className="or">-or-</p>
             <p className="p-text" onClick={Calendly}>Book a call</p>
           </div>

@@ -272,33 +272,37 @@ gap: 36px;
 .sl-container{
   display: flex;
   flex-direction: row;
-  height: 300px;
+  height: 500px;
   margin: auto;
   position: relative;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
+  padding-top: 50px;
 }
 .slider-container{
   display: flex;
-  /* width: calc(250px*14);
-  animation: scroll 35s linear infinite; */
-  transform: translateX(calc(var(--scroll, 0) * -1px)); /* Moves horizontally */
-  transition: transform 0.5s ease-out; /* Smoothness in motion */
+  transform: translateX(calc(var(--scroll, 0) * -1px)); 
+  transition: transform 0.5s ease-out; 
 }
 .slide-img{
   display: flex;
-  height: 240px;
+  height: 280px;
   width: auto;
   object-fit: cover;
- padding-right: 10px;
+ padding-right: 20px;
 }
-
 .slide-img img{
   border-radius: 15px;
 }
+.slide-img>img{
+  border-radius: 15px;
+  width: 480px;
+  height: 420px;
+}
+
 .overlay {
   position: absolute;
-  top: 250px;
+  top: 430px;
   width: 100%;
   padding: 0px 10px 10px 0px;
   background: rgba(0, 0, 0, 0.5);
@@ -311,6 +315,7 @@ gap: 36px;
   width: 20px; 
   height: auto;
   margin-right: 10px; 
+
 }
 
 .image-text {
@@ -829,8 +834,6 @@ font-weight: 700;
   justify-content: center;
   background-color: transparent;
 }
-
-
 .ps-btn{
   display: flex;
   align-items: center;
@@ -843,7 +846,6 @@ font-weight: 700;
   cursor: pointer;
   box-shadow: rgba(94, 63, 229, 0.25) 0px 0.120725px 0.120725px -1.25px inset, rgba(94, 63, 229, 0.25) 0px 1px 1px -2.5px inset, rgba(94, 63, 229, 0.25) 0px -2px 4px 0px inset, rgba(255, 255, 255, 0.25) 0px 4px 8px 0px inset, rgba(94, 63, 229, 0.16) 0px 8px 16px 0px;
 }
-
 .ps-btn>span{
   font-size: 18px;
   font-weight: 700;
@@ -851,21 +853,19 @@ font-weight: 700;
   font-family:"Satoshi-Regular",sans-serif ;
   background-color:#5E3FE5 ;
 }
-
 .ps-btn:hover span{
   background-color: transparent;
 }
-
 .ps-btn1{
 background-color: white;
+transition: 0.2s;
 }
-
 .ps-btn1:hover{
-  background-color: white;
+  background-color: #ece8fd;
 }
 .ps-btn1 span{
   color: #5E3FE5;
-  background-color: white;
+  background-color: transparent;
 }
 .btn-pricec1 span{
   color: #5E3FE5;
@@ -1268,6 +1268,10 @@ flex-wrap: wrap;
   font-size: 18px;
   font-weight: 700;
   padding: 10px; 
+}
+.payments{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 .rights{
   margin: 10px;

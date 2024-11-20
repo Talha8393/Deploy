@@ -31,10 +31,10 @@ export default function Footer2(){
                     <li><a href="">Terms & Conditions</a></li>
                     <li><a href="">Privacy Policy</a></li>
                 </ul>
-                <ul>
-                <li><a href=""><Image style={{width: 58, height:32}} src={wise} alt="wise" /></a></li>
-                <li><a href=""><Image style={{width: 82, height:32}} src={payoneer} alt="payoneer" /></a></li>
-                <li><a href=""><Image style={{width: 55, height:32}} src={upwork} alt="upwork" /></a></li>
+                <ul >
+                <li ><a href=""><Image className="payments" style={{width: 88, height:42}} src={wise} alt="wise" /></a></li>
+                <li><a href=""><Image className="payments"  style={{width: 120, height:42}} src={payoneer} alt="payoneer" /></a></li>
+                <li><a href=""><Image className="payments"  style={{width: 80, height:46}} src={upwork} alt="upwork" /></a></li>
                 </ul>
                 <div className="rights">
                     <span>© 2024 Design Studio UI UX | All Rights Reserved</span>
